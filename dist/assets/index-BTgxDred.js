@@ -1,0 +1,1 @@
+import{n as a}from"./index-nY1T_elh.js";async function t(e={}){return typeof e=="object"&&Object.freeze(e),await a("plugin:dialog|open",{options:e})}async function f(e={}){return typeof e=="object"&&Object.freeze(e),await a("plugin:dialog|save",{options:e})}export{t as o,f as s};

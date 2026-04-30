@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm dev:*)",
+      "Bash(curl -s http://localhost:1420)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(timeout 15 pnpm tauri dev)",
+      "Bash(pnpm tauri:*)",
+      "Bash(taskkill /F /IM apartment-manager-v2.exe)",
+      "Bash(tasklist)",
+      "Bash(cat \"e:\\\\vibe coding\\\\Apartment1\\\\A3\\\\apartment-manager2\\\\src-tauri\\\\logs\"/*.log)",
+      "Bash(taskkill /F /IM node.exe taskkill /F /IM apartment-manager-v2.exe sleep 3)",
+      "Bash(taskkill /F /PID 3176 taskkill /F /PID 2024 sleep 2)",
+      "Bash(cmd //c \"taskkill /F /PID 3176\" cmd //c \"taskkill /F /PID 2024\" sleep 3 netstat -ano)",
+      "Bash(cmd //c \"taskkill /F /IM node.exe\")",
+      "Bash(cmd //c \"taskkill /F /IM apartment-manager-v2.exe\")",
+      "Bash(cmd //c \"taskkill /F /IM msedgewebview2.exe\")",
+      "Bash(Test-Path \"h:\\\\vibe coding\\\\Apartment\\\\A1\\\\apartment-manager\\\\node_modules\\\\picomatch\")",
+      "Bash(Test-Path \"h:\\\\vibe coding\\\\Apartment\\\\A1\\\\apartment-manager\\\\node_modules\\\\.pnpm\\\\picomatch*\")",
+      "Bash(rm -rf node_modules)",
+      "Bash(pnpm install *)",
+      "Bash(node node_modules/vite/bin/node.js --version)",
+      "Bash(node node_modules/vite/bin/vite.js --version)",
+      "Bash(npx tsc *)",
+      "WebSearch",
+      "Bash(git config *)",
+      "Bash(git checkout *)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'Backup before modular refactoring *)",
+      "Bash(mkdir -p \"../apartment-manager-BACKUP-$\\(date +%Y%m%d-%H%M%S\\)\")",
+      "Bash(cp -r . \"../apartment-manager-BACKUP-$\\(date +%Y%m%d-%H%M%S\\)/\")",
+      "Bash(grep -E \"^src.*\\\\.rs$\")",
+      "Bash(cargo build *)",
+      "Bash(mkdir -p \"C:/Users/alexc/.claude/plugins/marketplaces/superpowers\")",
+      "Bash(cp -r \"D:/Alex Code/skills/superpowers-main/.\" \"C:/Users/alexc/.claude/plugins/marketplaces/superpowers/\")",
+      "Bash(mkdir -p \"C:/Users/alexc/.claude/agents\")",
+      "Bash(cp \"D:/Alex Code/skills/agency-agents-main/engineering/engineering-code-reviewer.md\" \"D:/Alex Code/skills/agency-agents-main/engineering/engineering-frontend-developer.md\" \"D:/Alex Code/skills/agency-agents-main/engineering/engineering-security-engineer.md\" \"C:/Users/alexc/.claude/agents/\")"
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+//! Tauri 命令层
+//!
+//! IPC 接口，薄转发层
+//!
+//! V3.0.0 条件编译隔离：
+//! - legacy-db: rusqlite 同步实现（默认）
+//! - new-db: sqlx 异步实现（Phase 1）
+
+#[cfg(feature = "legacy-db")]
+pub mod room_commands;
+#[cfg(feature = "legacy-db")]
+pub mod tenant_commands;
+#[cfg(feature = "legacy-db")]
+pub mod lease_commands;
+#[cfg(feature = "legacy-db")]
+pub mod bill_commands;
+#[cfg(feature = "legacy-db")]
+pub mod payment_commands;
+#[cfg(feature = "legacy-db")]
+pub mod deposit_commands;
+#[cfg(feature = "legacy-db")]
+pub mod config_commands;
+#[cfg(feature = "legacy-db")]
+pub mod meter_reading_commands;
+#[cfg(feature = "legacy-db")]
+pub mod report_commands;
+#[cfg(feature = "legacy-db")]
+pub mod reminder_commands;
+#[cfg(feature = "legacy-db")]
+pub mod document_commands;
+#[cfg(feature = "legacy-db")]
+pub mod maintenance_commands;
+#[cfg(feature = "legacy-db")]
+pub mod import_commands;
+#[cfg(feature = "legacy-db")]
+pub mod diagnostic;
+#[cfg(feature = "legacy-db")]
+pub mod backup_commands;
+#[cfg(feature = "legacy-db")]
+pub mod export_commands;
+#[cfg(feature = "legacy-db")]
+pub mod auth_commands;
+
+#[cfg(feature = "legacy-db")]
+pub use room_commands::*;
+#[cfg(feature = "legacy-db")]
+pub use tenant_commands::*;
+#[cfg(feature = "legacy-db")]
+pub use lease_commands::*;
+#[cfg(feature = "legacy-db")]
+pub use bill_commands::*;
+#[cfg(feature = "legacy-db")]
+pub use payment_commands::*;
+#[cfg(feature = "legacy-db")]
+pub use deposit_commands::*;
+#[cfg(feature = "legacy-db")]
+pub use config_commands::*;
+#[cfg(feature = "legacy-db")]
+pub use meter_reading_commands::*;
+#[cfg(feature = "legacy-db")]
+pub use report_commands::*;
+#[cfg(feature = "legacy-db")]
+pub use reminder_commands::*;
+#[cfg(feature = "legacy-db")]
+pub use document_commands::*;
+#[cfg(feature = "legacy-db")]
+pub use maintenance_commands::*;
+#[cfg(feature = "legacy-db")]
+pub use import_commands::*;
+#[cfg(feature = "legacy-db")]
+pub use diagnostic::*;
+#[cfg(feature = "legacy-db")]
+pub use backup_commands::*;
+#[cfg(feature = "legacy-db")]
+pub use export_commands::*;
+#[cfg(feature = "legacy-db")]
+pub use auth_commands::*;

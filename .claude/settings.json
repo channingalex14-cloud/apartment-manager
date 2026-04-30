@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "postEdit": [
+      { "if": "**/*.ts", "run": "npx tsc --noEmit" },
+      { "if": "**/src-tauri/**/*.rs", "run": "cargo check" }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "mcp__mempalace__mempalace_add_drawer",
+      "Read(//c/Users/alex/.cache/chroma/onnx_models/all-MiniLM-L6-v2/**)",
+      "Bash(npm run type-check)",
+      "Bash(cargo check)"
+    ]
+  }
+}

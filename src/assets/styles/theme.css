@@ -1,0 +1,354 @@
+/* =====================================================
+ * 新逸公寓管理系统 - 深色/浅色双模式主题变量
+ * ===================================================== */
+
+/* 浅色主题（默认） */
+:root {
+  color-scheme: light;
+
+  /* ---- 品牌主色 ---- */
+  --color-primary: #2C73D2;
+  --color-primary-light-3: #5A9BE6;
+  --color-primary-light-5: #88C3EB;
+  --color-success: #008F7A;
+  --color-success-light-3: #33AF99;
+  --color-warning: #FF9671;
+  --color-warning-light-3: #FFB094;
+  --color-danger: #f56c6c;
+  --color-danger-light-3: #f78989;
+  --color-info: #909399;
+
+  /* ====== Element Plus 变量覆盖（关键！EP组件使用这些变量）===== */
+  --el-color-primary: #2C73D2;
+  --el-color-primary-light-3: #5A9BE6;
+  --el-color-primary-light-5: #88C3EB;
+  --el-color-primary-light-8: #BDD8F4;
+  --el-color-primary-light-9: #DEEAF6;
+  --el-color-success: #008F7A;
+  --el-color-success-light-3: #33AF99;
+  --el-color-success-light-5: #66CBB5;
+  --el-color-success-light-8: #B3E8DC;
+  --el-color-success-light-9: #D1F2E9;
+  --el-color-warning: #FF9671;
+  --el-color-warning-light-3: #FFB094;
+  --el-color-warning-light-5: #FFC8B3;
+  --el-color-warning-light-8: #FFE4D9;
+  --el-color-warning-light-9: #FFF2EC;
+  --el-color-danger: #f56c6c;
+  --el-color-danger-light-3: #f78989;
+  --el-color-danger-light-5: #fab6b6;
+  --el-color-danger-light-8: #fde2e2;
+  --el-color-danger-light-9: #fef0f0;
+  --el-color-info: #909399;
+  --el-color-info-light-3: #a6a9ad;
+  --el-color-info-light-5: #c8c9cc;
+  --el-color-info-light-8: #e9e9eb;
+  --el-color-info-light-9: #f4f4f5;
+
+  /* ---- 文字颜色 ---- */
+  --text-primary: #303133;
+  --text-regular: #606266;
+  --text-secondary: #909399;
+  --text-placeholder: #c0c4cc;
+
+  /* EP 文字变量覆盖 */
+  --el-text-color-primary: #303133;
+  --el-text-color-regular: #606266;
+  --el-text-color-secondary: #909399;
+  --el-text-color-placeholder: #c0c4cc;
+
+  /* ---- 背景色 ---- */
+  --bg-page: #f2f3f5;
+  --bg-card: #ffffff;
+  --bg-hover: #f5f7fa;
+
+  /* EP 背景变量覆盖 */
+  --el-bg-color: #ffffff;
+  --el-bg-color-page: #f2f3f5;
+  --el-bg-color-overlay: #ffffff;
+
+  /* ---- 边框颜色 ---- */
+  --border-base: #dcdfe6;
+  --border-light: #e4e7ed;
+  --border-lighter: #ebeef5;
+
+  /* EP 边框变量覆盖 */
+  --el-border-color: #dcdfe6;
+  --el-border-color-light: #e4e7ed;
+  --el-border-color-lighter: #ebeef5;
+  --el-border-color-extra-light: #f2f6fc;
+
+  /* ---- 布局专用色 ---- */
+  /* 侧边栏 */
+  --sidebar-bg: #f7f6f0;
+  --sidebar-logo-bg: #f7f6f0;
+  --sidebar-text: #606266;
+  --sidebar-text-active: #2C73D2;
+
+  /* 顶栏 */
+  --header-bg: #f2f3f5;
+  --header-border: #dcdfe6;
+  --header-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+
+  /* 主内容区 */
+  --main-bg: #f2f3f5;
+
+  /* ---- 房态颜色（彩虹光谱优化版）---- */
+  --room-rented: #008F7A;
+  --room-rented-bg-start: #E6F7F4;
+  --room-new: #0089BA;
+  --room-new-bg-start: #E6F5FA;
+  --room-vacant: #E5A800;
+  --room-vacant-bg-start: #FFFBEA;
+  --room-checkout: #FF9671;
+  --room-checkout-bg-start: #FFF5F0;
+  --room-staff: #67C23A;
+  --room-staff-bg-start: #f0f9eb;
+  --room-manage: #D65DB1;
+  --room-manage-bg-start: #F9EEF8;
+
+  /* ---- 图表颜色（与房态色系统一）---- */
+  --chart-line-primary: #2C73D2;
+  --chart-line-primary-area: rgba(44, 115, 210, 0.1);
+  --chart-line-success: #008F7A;
+  --chart-line-success-area: rgba(0, 143, 122, 0.1);
+  --chart-line-warning: #FF9671;
+  --chart-line-warning-area: rgba(255, 150, 113, 0.1);
+
+  /* ---- 环形图 ---- */
+  --donut-collected: #008F7A;
+  --donut-unpaid: #FF9671;
+
+  /* ---- 阴影 ---- */
+  --shadow-base: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 4px 16px rgba(0, 0, 0, 0.1);
+
+  /* ---- 滚动条 ---- */
+  --scrollbar-thumb: #c0c4cc;
+  --scrollbar-thumb-hover: #909399;
+  --scrollbar-track: transparent;
+
+  /* ---- 窗口控制按钮 ---- */
+  --window-btn-bg: transparent;
+  --window-btn-color: #606266;
+  --window-btn-hover-bg: rgba(0, 0, 0, 0.06);
+  --window-btn-hover-color: #303133;
+  --window-close-hover-bg: #f56c6c;
+  --window-close-hover-color: #ffffff;
+}
+
+/* 深色主题 */
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* ---- 品牌主色 - 提亮15%以适应深色背景 ---- */
+  --color-primary: #5A9BE6;
+  --color-primary-light-3: #7DB5EF;
+  --color-primary-light-5: #A0CFF7;
+  --color-success: #33AF99;
+  --color-success-light-3: #5CC5B3;
+  --color-warning: #FFB094;
+  --color-warning-light-3: #FFC8B3;
+  --color-danger: #f78989;
+  --color-danger-light-3: #f9a5a5;
+  --color-info: #a6a9ad;
+
+  /* ====== Element Plus 深色模式变量覆盖 ===== */
+  --el-color-primary: #5A9BE6;
+  --el-color-primary-light-3: #7DB5EF;
+  --el-color-primary-light-5: #A0CFF7;
+  --el-color-primary-light-8: #CEE0F8;
+  --el-color-primary-light-9: #E6EFFC;
+  --el-color-success: #33AF99;
+  --el-color-success-light-3: #5CC5B3;
+  --el-color-success-light-5: #82D5C7;
+  --el-color-success-light-8: #C2EBE3;
+  --el-color-success-light-9: #DEF5F0;
+  --el-color-warning: #FFB094;
+  --el-color-warning-light-3: #FFC8B3;
+  --el-color-warning-light-5: #FFDDD0;
+  --el-color-warning-light-8: #FFF0E8;
+  --el-color-warning-light-9: #FFF8F3;
+  --el-color-danger: #f78989;
+  --el-color-danger-light-3: #f9a5a5;
+  --el-color-danger-light-5: #fcbbbb;
+  --el-color-danger-light-8: #fce0e0;
+  --el-color-danger-light-9: #fef0f0;
+  --el-color-info: #a6a9ad;
+  --el-color-info-light-3: #b8babe;
+  --el-color-info-light-5: #ced0d3;
+  --el-color-info-light-8: #e4e4e7;
+  --el-color-info-light-9: #efeff1;
+
+  /* ---- 文字颜色 - 反转 ---- */
+  --text-primary: #e6edf3;
+  --text-regular: #9aa4af;
+  --text-secondary: #6b7280;
+  --text-placeholder: #4b5563;
+
+  /* EP 文字变量深色模式 */
+  --el-text-color-primary: #e6edf3;
+  --el-text-color-regular: #9aa4af;
+  --el-text-color-secondary: #6b7280;
+  --el-text-color-placeholder: #4b5563;
+
+  /* ---- 背景色 - 深色调 ---- */
+  --bg-page: #0a0a0a;
+  --bg-card: #141414;
+  --bg-hover: #1e1e1e;
+
+  /* EP 背景变量深色模式 */
+  --el-bg-color: #141414;
+  --el-bg-color-page: #0a0a0a;
+  --el-bg-color-overlay: #1d1e1f;
+
+  /* ---- 边框颜色 - 暗色调 ---- */
+  --border-base: #30363d;
+  --border-light: #26323b;
+  --border-lighter: #1e2328;
+
+  /* EP 边框变量深色模式 */
+  --el-border-color: #30363d;
+  --el-border-color-light: #26323b;
+  --el-border-color-lighter: #1e2328;
+  --el-border-color-extra-light: #1a1f25;
+
+  /* ---- 布局专用色 ---- */
+  /* 侧边栏 - 更深沉 */
+  --sidebar-bg: #000000;
+  --sidebar-logo-bg: #0a0a0a;
+  --sidebar-text: #8b949e;
+  --sidebar-text-active: #e6edf3;
+
+  /* 顶栏 - 深色背景 */
+  --header-bg: #0a0a0a;
+  --header-border: #21262d;
+  --header-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  /* 主内容区 */
+  --main-bg: #0a0a0a;
+
+  /* ---- 房态颜色 - 保持识别度，微调背景渐变 ---- */
+  --room-rented: #3FB98A;
+  --room-rented-bg-start: #0D2820;
+  --room-new: #45B5E0;
+  --room-new-bg-start: #0D2535;
+  --room-vacant: #FFD700;
+  --room-vacant-bg-start: #2D2800;
+  --room-checkout: #FFAB89;
+  --room-checkout-bg-start: #2D2015;
+  --room-staff: #6ECE8A;
+  --room-staff-bg-start: #0D2818;
+  --room-manage: #E08ACC;
+  --room-manage-bg-start: #251530;
+
+  /* ---- 图表颜色 - 提亮以适应深色 ---- */
+  --chart-line-primary: #5A9BE6;
+  --chart-line-primary-area: rgba(90, 155, 230, 0.15);
+  --chart-line-success: #3FB98A;
+  --chart-line-success-area: rgba(63, 185, 138, 0.15);
+  --chart-line-warning: #FFAB89;
+  --chart-line-warning-area: rgba(255, 171, 137, 0.15);
+
+  /* ---- 环形图 ---- */
+  --donut-collected: #3FB98A;
+  --donut-unpaid: #FFAB89;
+
+  /* ---- 阴影 - 更深沉 ---- */
+  --shadow-base: 0 2px 12px rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-card-hover: 0 4px 16px rgba(0, 0, 0, 0.4);
+
+  /* ---- 滚动条 ---- */
+  --scrollbar-thumb: #30363d;
+  --scrollbar-thumb-hover: #484f58;
+  --scrollbar-track: #0a0a0a;
+
+  /* ---- 窗口控制按钮 ---- */
+  --window-btn-bg: transparent;
+  --window-btn-color: #8b949e;
+  --window-btn-hover-bg: rgba(255, 255, 255, 0.08);
+  --window-btn-hover-color: #e6edf3;
+  --window-close-hover-bg: #da3633;
+  --window-close-hover-color: #ffffff;
+}
+
+/* 全局过渡动画 */
+body,
+.card,
+.btn,
+.sidebar,
+.header,
+.el-card,
+.el-table,
+.room-card {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* =====================================================
+ * 🔴 强制覆盖区域 - 确保EP组件使用我们的颜色
+ * 使用 html:root 选择器提高优先级
+ * ===================================================== */
+
+/* 浅色模式强制覆盖 */
+html:root {
+  /* 品牌主色强制覆盖 */
+  --el-color-primary: #2C73D2 !important;
+  --el-color-primary-light-3: #5A9BE6 !important;
+  --el-color-primary-light-5: #88C3EB !important;
+  --el-color-primary-light-8: #BDD8F4 !important;
+  --el-color-primary-light-9: #DEEAF6 !important;
+
+  /* 成功色强制覆盖 */
+  --el-color-success: #008F7A !important;
+  --el-color-success-light-3: #33AF99 !important;
+  --el-color-success-light-5: #66CBB5 !important;
+
+  /* 警告色强制覆盖 */
+  --el-color-warning: #FF9671 !important;
+  --el-color-warning-light-3: #FFB094 !important;
+  --el-color-warning-light-5: #FFC8B3 !important;
+
+  /* 文字颜色强制覆盖 */
+  --el-text-color-primary: #303133 !important;
+  --el-text-color-regular: #606266 !important;
+
+  /* 背景色强制覆盖 */
+  --el-bg-color: #ffffff !important;
+  --el-bg-color-page: #f2f3f5 !important;
+
+  /* 边框色强制覆盖 */
+  --el-border-color: #dcdfe6 !important;
+}
+
+/* 深色模式强制覆盖 */
+html[data-theme="dark"] {
+  /* 品牌主色深色模式强制覆盖 */
+  --el-color-primary: #5A9BE6 !important;
+  --el-color-primary-light-3: #7DB5EF !important;
+  --el-color-primary-light-5: #A0CFF7 !important;
+
+  /* 成功色深色模式强制覆盖 */
+  --el-color-success: #33AF99 !important;
+  --el-color-success-light-3: #5CC5B3 !important;
+
+  /* 警告色深色模式强制覆盖 */
+  --el-color-warning: #FFB094 !important;
+  --el-color-warning-light-3: #FFC8B3 !important;
+
+  /* 文字颜色深色模式强制覆盖 */
+  --el-text-color-primary: #e6edf3 !important;
+  --el-text-color-regular: #9aa4af !important;
+
+  /* 背景色深色模式强制覆盖 */
+  --el-bg-color: #141414 !important;
+  --el-bg-color-page: #0a0a0a !important;
+
+  /* 边框色深色模式强制覆盖 */
+  --el-border-color: #30363d !important;
+}

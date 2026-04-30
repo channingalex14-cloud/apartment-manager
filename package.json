@@ -1,0 +1,59 @@
+{
+  "name": "apartment-manager-v2",
+  "version": "2.0.5",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "test": "vitest",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-dialog": "^2",
+    "@tauri-apps/plugin-fs": "^2",
+    "@vueuse/core": "^12.0.0",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
+    "echarts": "^5.6.0",
+    "element-plus": "^2.9.1",
+    "pinia": "^2.3.0",
+    "vue": "^3.5.13",
+    "vue-echarts": "^7.0.3",
+    "vue-router": "^4.5.0",
+    "xlsx": "^0.18.5",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "@tauri-apps/cli-win32-x64-msvc": "^2.10.1",
+    "@types/node": "^25.6.0",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "@vue/test-utils": "^2.4.6",
+    "jsdom": "^25.0.0",
+    "lint-staged": "^16.4.0",
+    "sass": "^1.85.0",
+    "simple-git-hooks": "^2.13.1",
+    "typescript": "~5.7.2",
+    "unplugin-auto-import": "^0.19.0",
+    "unplugin-vue-components": "^0.28.0",
+    "vite": "^6.1.0",
+    "vitest": "^2.1.0",
+    "vue-tsc": "^2.2.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{ts,vue}": [
+      "vue-tsc --noEmit"
+    ],
+    "*.rs": [
+      "cargo check --manifest-path=src-tauri/Cargo.toml"
+    ]
+  }
+}

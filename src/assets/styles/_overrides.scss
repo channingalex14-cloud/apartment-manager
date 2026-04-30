@@ -1,0 +1,292 @@
+// =====================================================
+// 🔴 终极样式覆盖 - 强制所有UI组件使用新配色
+// =====================================================
+
+// ==================== 1. 按钮 (el-button) ====================
+
+.el-button--primary {
+  background-color: #2C73D2 !important;
+  border-color: #2C73D2 !important;
+  color: #fff !important;
+
+  &:hover,
+  &:focus {
+    background-color: #5A9BE6 !important;
+    border-color: #5A9BE6 !important;
+  }
+
+  &:active {
+    background-color: #1E5AAE !important;
+    border-color: #1E5AAE !important;
+  }
+
+  &.is-plain {
+    color: #2C73D2 !important;
+    background-color: rgba(44, 115, 210, 0.07) !important;
+    border-color: rgba(44, 115, 210, 0.3) !important;
+
+    &:hover {
+      color: #fff !important;
+      background-color: #2C73D2 !important;
+      border-color: #2C73D2 !important;
+    }
+  }
+
+  &.is-text {
+    color: #2C73D2 !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+
+    &:hover {
+      background-color: rgba(44, 115, 210, 0.1) !important;
+    }
+  }
+
+  &.is-disabled {
+    background-color: rgba(44, 115, 210, 0.3) !important;
+    border-color: rgba(44, 115, 210, 0.4) !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+}
+
+.el-button--success {
+  background-color: #008F7A !important;
+  border-color: #008F7A !important;
+  color: #fff !important;
+
+  &:hover,
+  &:focus {
+    background-color: #33AF99 !important;
+    border-color: #33AF99 !important;
+  }
+}
+
+.el-button--warning {
+  background-color: #FF9671 !important;
+  border-color: #FF9671 !important;
+  color: #fff !important;
+
+  &:hover,
+  &:focus {
+    background-color: #FFB094 !important;
+    border-color: #FFB094 !important;
+  }
+}
+
+// ==================== 2. 菜单 (el-menu) - 侧边栏 ====================
+
+.el-menu {
+  .el-menu-item.is-active {
+    color: #2C73D2 !important;
+    background-color: rgba(44, 115, 210, 0.08) !important;
+
+    .el-icon,
+    i {
+      color: #2C73D2 !important;
+    }
+  }
+
+  .el-menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+  }
+
+  .el-sub-menu__title:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+  }
+}
+
+// ==================== 3. 链接 (el-link) ====================
+
+.el-link--primary {
+  --el-link-text-color: #2C73D2 !important;
+  --el-link-hover-text-color: #5A9BE6 !important;
+  color: var(--el-link-text-color) !important;
+
+  &:hover {
+    color: var(--el-link-hover-text-color) !important;
+  }
+}
+
+// ==================== 4. 标签 (el-tag) ====================
+
+.el-tag--primary {
+  background-color: rgba(44, 115, 210, 0.1) !important;
+  border-color: rgba(44, 115, 210, 0.25) !important;
+  color: #2C73D2 !important;
+}
+
+.el-tag--success {
+  background-color: rgba(0, 143, 122, 0.1) !important;
+  border-color: rgba(0, 143, 122, 0.25) !important;
+  color: #008F7A !important;
+}
+
+.el-tag--warning {
+  background-color: rgba(255, 150, 113, 0.1) !important;
+  border-color: rgba(255, 150, 113, 0.25) !important;
+  color: #FF9671 !important;
+}
+
+// ==================== 5. 复选框 (el-checkbox) ====================
+
+.el-checkbox__input.is-checked .el-checkbox__inner {
+  background-color: #2C73D2 !important;
+  border-color: #2C73D2 !important;
+}
+
+.el-checkbox__input.is-checked + .el-checkbox__label {
+  color: #2C73D2 !important;
+}
+
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: #2C73D2 !important;
+  border-color: #2C73D2 !important;
+}
+
+// ==================== 6. 单选框 (el-radio) ====================
+
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: #2C73D2 !important;
+  background: #2C73D2 !important;
+}
+
+.el-radio__input.is-checked + .el-radio__label {
+  color: #2C73D2 !important;
+}
+
+// ==================== 7. 开关 (el-switch) ====================
+
+.el-switch.is-checked .el-switch__core {
+  border-color: #2C73D2 !important;
+  background-color: #2C73D2 !important;
+}
+
+// ==================== 8. 分页器 (el-pagination) ====================
+
+.el-pagination {
+  .el-pager li.is-active {
+    background-color: #2C73D2 !important;
+  }
+
+  .btn-prev:hover,
+  .btn-next:hover,
+  li:hover {
+    color: #2C73D2 !important;
+  }
+}
+
+// ==================== 9. 输入框聚焦 (el-input) ====================
+
+.el-input__wrapper:focus-within {
+  box-shadow: 0 0 0 1px #2C73D2 inset !important;
+}
+
+// ==================== 10. 选择器 (el-select) ====================
+
+.el-select .el-input.is-focus .el-input__wrapper {
+  box-shadow: 0 0 0 1px #2C73D2 inset !important;
+}
+
+// ==================== 11. 进度条 (el-progress) ====================
+
+.el-progress-bar__inner--primary {
+  background-color: #2C73D2 !important;
+}
+
+.el-progress-bar__inner--success {
+  background-color: #008F7A !important;
+}
+
+.el-progress-bar__inner--warning {
+  background-color: #FF9671 !important;
+}
+
+// ==================== 12. Tabs 标签页 ====================
+
+.el-tabs__item.is-active {
+  color: #2C73D2 !important;
+}
+
+.el-tabs__item:hover {
+  color: #2C73D2 !important;
+}
+
+.el-tabs__active-bar {
+  background-color: #2C73D2 !important;
+}
+
+// ==================== 13. 步骤条 (el-steps) ====================
+
+.el-step__head.is-finish {
+  color: #2C73D2 !important;
+  border-color: #2C73D2 !important;
+}
+
+.el-step__head.is-process {
+  color: #2C73D2 !important;
+  border-color: #2C73D2 !important;
+}
+
+.el-step__title.is-finish {
+  color: #2C73D2 !important;
+}
+
+// ==================== 14. 面包屑 (el-breadcrumb) ====================
+
+.el-breadcrumb__inner.is-link:hover {
+  color: #2C73D2 !important;
+}
+
+// ==================== 15. 表格排序图标 ====================
+
+.el-table .caret-wrapper .sort-caret.ascending {
+  border-bottom-color: #2C73D2 !important;
+}
+
+.el-table .caret-wrapper .sort-caret.descending {
+  border-top-color: #2C73D2 !important;
+}
+
+// ==================== 16. 徽章 (el-badge) ====================
+
+.el-badge__content--primary {
+  background-color: #2C73D2 !important;
+}
+
+// ==================== 17. Avatar 头像 ====================
+
+.el-avatar {
+  background-color: #2C73D2 !important;
+}
+
+// ==================== 18. 时间线 (el-timeline) ====================
+
+.el-timeline-item__tail {
+  border-left-color: #2C73D2 !important;
+}
+
+// ==================== 19. 加载中 (el-loading) ====================
+
+.el-loading-mask .el-loading-spinner .path {
+  stroke: #2C73D2 !important;
+}
+
+// ==================== 20. 消息提示 (el-message) ====================
+
+.el-message--success .el-message__content {
+  color: #008F7A !important;
+}
+
+.el-message--warning .el-message__content {
+  color: #FF9671 !important;
+}
+
+.el-message--error .el-message__content {
+  color: #f56c6c !important;
+}
+
+// ==================== 21. 通知铃铛 (el-notification) ====================
+
+.el-notification__title {
+  color: #2C73D2 !important;
+}
