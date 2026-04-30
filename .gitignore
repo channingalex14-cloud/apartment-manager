@@ -8,6 +8,12 @@ target/
 # IDE
 .vscode/
 .idea/
+.claude/
+.trae/
+.workbuddy/
+
+# GitHub
+.github/
 
 # OS
 .DS_Store
